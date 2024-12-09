@@ -24,12 +24,26 @@ import Password from 'primevue/password';
 import FloatLabel from 'primevue/floatlabel';
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
+import axios from 'axios';
 const userName = ref(null);
 const passWord = ref(null);
 
 const Login = () => {
   console.log(userName)
   console.log(passWord)
+  const response = await axios.get('http://localhost:3000/login', {
+      userName: userName.value,
+      passWord: passWord.value,
+  });
+  try {
+    if( response.status === 200){
+      alert('Login Successfully')
+      window.location.href = '/'
+    }
+    alert('Login Failed')
+  } catch (error) {
+    alert('Something Went Wrong')
+  }
 }
 
 </script>
