@@ -38,7 +38,7 @@
   <body>
     <div class="attractive-destination">
       <h2>Các điểm đến thu hút nhất Việt Nam</h2>
-      <Carousel :value="destinations" :numVisible="4" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
+      <Carousel :value="destinations" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
         <template #item="slotProps">
           <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4" style="height: 210px; align-items: center; display: flex;">
             <div class="mb-4">
@@ -56,7 +56,7 @@
     </div>
     <div class="promo-hotel">
       <h2>Chương trình khuyến mại chỗ ở</h2>
-      <Carousel :value="destinations" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
+      <!-- <Carousel :value="destinations" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" circular :autoplayInterval="3000">
         <template #item="slotProps">
           <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4" style="height: 210px; align-items: center; display: flex;">
             <div class="mb-4">
@@ -66,7 +66,7 @@
             </div>
           </div>
         </template>
-      </Carousel>
+      </Carousel> -->
     </div>
   </body>
   <Footer />
@@ -151,7 +151,7 @@ template{
 }
 img{
   width: 100%;
-  height: 20%;
+  height: 40%;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -159,12 +159,11 @@ img{
 .container{
   justify-content: center;
   display: flex;
-  margin-top: 4%;
+  margin-top: 5%;
   color: white;
   font-size: 12px;
 }
 .nav1, .nav2 {
-  margin-top: 15px;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;

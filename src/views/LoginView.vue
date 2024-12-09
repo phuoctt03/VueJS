@@ -9,7 +9,7 @@
       </FloatLabel>
       <br>
       <FloatLabel variant="on">
-          <Password v-model="passWord" inputId="password" toggleMask />
+          <Password v-model="passWord" inputId="password" toggleMask :feedback="false" />
           <label for="password">Password</label>
       </FloatLabel>
       <p>Dont have account? <a href="signup">SignUp</a></p>
@@ -66,6 +66,7 @@ p{
 }
 a{
   text-decoration: none;
+  color:blue;
 }
 button{
   margin-bottom: 10%;
