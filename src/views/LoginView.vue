@@ -35,6 +35,7 @@ const Login = () => {
 </script>
 <style scoped>
 .loginScreen{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('https://cdn.pixabay.com/photo/2015/12/06/20/10/christmas-bauble-1079926_640.jpg');
   width: 100%;
   justify-content: center;
@@ -48,25 +49,25 @@ const Login = () => {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.795);
-  height: 50%;
-  width: 20%;
+  height: 60%;
+  width: 25%;
   border-radius: 50px;
 }
 h1{
-  font-size: 60px;
-  margin-bottom: 15%;
+  font-size: 50px;
+  margin-bottom: 10%;
 }
 #username{
-  width: 261px;
+  width: 235px;
 }
 p{
   margin-top: 10%;
-  font-size: 20px;
+  font-size: 17px;
 }
 a{
   text-decoration: none;
 }
 button{
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 </style>
